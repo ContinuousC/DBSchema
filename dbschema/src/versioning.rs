@@ -41,7 +41,7 @@ pub enum Timeline {
     Active,
 }
 
-#[derive(Serialize, Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 #[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
 pub struct Anchor {
     pub from: DateTime<Utc>,
@@ -50,7 +50,7 @@ pub struct Anchor {
     //pub modified: DateTime<Utc>,
 }
 
-#[derive(Serialize, Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 pub struct TimeRange {
     pub from: Option<DateTime<Utc>>,
     pub to: Option<DateTime<Utc>>,
@@ -61,32 +61,32 @@ pub type DualVersionedValue = DualVersioned<Value>;
 pub type SingleVersioned<T> = Versioned<SingleVersionInfo, T>;
 pub type DualVersioned<T> = Versioned<DualVersionInfo, T>;
 
-#[derive(Serialize, Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 pub struct Timestamped<T> {
     pub timestamp: DateTime<Utc>,
     pub value: T,
 }
 
-#[derive(Serialize, Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 pub struct Identified<T> {
     pub object_id: ObjectId,
     pub value: T,
 }
 
-#[derive(Serialize, Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 #[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
 pub struct Versioned<V, T> {
     pub version: V,
     pub value: T,
 }
 
-#[derive(Serialize, Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 #[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
 pub struct SingleVersionInfo {
     pub active: Anchor,
 }
 
-#[derive(Serialize, Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, PartialEq, Eq, Clone, Debug)]
 #[cfg_attr(feature = "schemars", derive(schemars::JsonSchema))]
 pub struct DualVersionInfo {
     pub current: Anchor,
