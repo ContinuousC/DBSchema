@@ -1,0 +1,12 @@
+{
+    "all": [
+	{
+	    "at": {
+		"path": [ { "field": "snmp"}, "some", { "field": "sysType" }, { "option": "unknown" } ],
+		"filter": {
+		    "eq": null
+		}
+	    }
+	}
+    ]
+}

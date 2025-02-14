@@ -1,0 +1,64 @@
+{
+    "struct": {
+	"fields": {
+	    "@from": {
+		"date_time": {}
+	    },
+	    "@to": {
+		"option": {
+		    "value_type": {
+			"date_time": {}
+		    }
+		}
+	    },
+	    "snmp": {
+		"option": {
+		    "value_type": {
+			"struct": {
+			    "fields": {
+				"sysType": {
+				    "enum": {
+					"options": {
+					    "unknown": {"unit": {}},
+					    "router": {"unit": {}},
+					    "switch": {"unit": {}}
+					},
+					"default": "unknown"
+				    }
+				},
+				"ipMib": {
+				    "option": {
+					"value_type": {
+					    "struct": {
+						"fields": {
+						    "ipAddrTable": {
+							"option": {
+							    "value_type": {
+								"dictionary": {
+								    "value_type": {
+									"struct": {
+									    "fields": {
+										"ipAdEntAddr": {"ipv4": {}},
+										"ipAdEntNetMask": {"ipv4": {}},
+										"ipAdEntBcastAddr": {"ipv4": {}},
+										"ipAdEntReasmMaxSize": {"integer": {}}
+									    }
+									}
+								    }
+								}
+							    }
+							}
+						    }
+						}
+					    }
+					}
+				    }
+				}
+			    }
+			}
+		    }
+		}
+	    }
+	}
+    }
+}

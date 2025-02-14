@@ -1,0 +1,22 @@
+[package]
+name = "dbschema-derive"
+version = "0.1.8"
+authors = ["Maarten Deprez"]
+edition = "2021"
+description = "Configuration rule derivation for ContinuousC"
+repository = "https://github.com/ContinuousC/DBSchema.git"
+license = "Elastic-2.0"
+publish = false
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full", "extra-traits"] }
+proc-macro2 = "1.0.29"
+quote = "1.0.10"
+
+[dev-dependencies]
+serde = { version = "1.0", features = ["derive"] }
+dbschema = { version = "0.1" }
+serde_json = "1.0.113"

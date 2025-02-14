@@ -1,0 +1,324 @@
+{
+    "versioning": "timestamped",
+    "schema": {
+        "fields": {
+	    "table_id": {
+		"string": {}
+	    },
+	    "queried_item_type": {
+		"string": {}
+	    },
+	    "queried_item_id": {
+		"string": {}
+	    },
+	    "item_type": {
+		"string": {}
+	    },
+	    "query_seq_num": {
+		"integer": {}
+	    },
+	    "result": {
+		"enum": {
+		    "options": {
+			"error": {
+			    "struct": {
+				"fields": {
+				    "message": {
+					"string": {}
+				    }
+				}
+			    }
+			},
+			"success": {
+			    "struct": {
+				"fields": {
+				    "warnings": {
+					"list": {
+					    "value_type": {
+						"string": {}
+					    }
+					}
+				    }
+				}
+			    }
+			},
+			"metrics": {
+			    "struct": {
+				"fields": {
+				    "grouping": {
+					"enum": {
+					    "options": {
+						"item": {
+						    "string": {}
+						},
+						"group": {
+						    "string": {}
+						}
+					    }
+					}
+				    },
+				    "metrics": {
+					"struct": {
+					    "fields": {
+						"ifEntry": {
+						    "option": {
+							"value_type": {
+							    "struct": {
+								"fields": {
+								    "ifAdminStatus": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "string": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifConnectorPresent": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "string": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifDescr": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "string": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifName": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "string": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifAlias": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "string": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCInBroadcastPkts": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCInMulticastPkts": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCInOctets": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCInUcastPkts": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCOutBroadcastPkts": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCOutMulticastPkts": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCOutOctets": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHCOutUcastPkts": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifHighSpeed": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifInDiscards": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifInErrors": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifInUnknownProtos": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifOutDiscards": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifOutErrors": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "double": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    },
+								    "ifOperStatus": {
+									"enum": {
+									    "options": {
+										"ok": {
+										    "string": {}
+										},
+										"err": {
+										    "string": {}
+										}
+									    }
+									}
+								    }
+								}
+							    }
+							}
+						    }
+						}
+					    }
+					}
+				    }
+				}
+			    }
+			}
+		    }
+		}
+	    }
+	}
+    }
+}

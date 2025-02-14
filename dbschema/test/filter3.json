@@ -1,0 +1,12 @@
+{
+    "at": {
+	"path": [
+	    {"field": "snmp"}, "some",
+	    {"field": "ipMib"}, "some",
+	    {"field": "ipAddrTable"}, "some"
+	],
+	"filter": {
+	    "any_elem": {"all": []}
+	}
+    }
+}

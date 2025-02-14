@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+	"dbschema",
+	"dbschema-derive",
+	"dbschema-elastic"
+]
+
+[patch.crates-io]
+dbschema = { path = "dbschema" }
+dbschema-derive = { path = "dbschema-derive" }
+dbschema-elastic = { path = "dbschema-elastic" }

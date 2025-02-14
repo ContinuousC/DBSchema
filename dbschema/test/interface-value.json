@@ -1,0 +1,15 @@
+{
+    "timestamp": "2021-09-08T09:01:42.883470054Z",
+    "value": {
+	"item_type": "Interface",
+	"queried_item_id": "localhost",
+	"queried_item_type": "host",
+	"query_seq_num": 1,
+	"result": {
+            "error": {
+		"message": "Protocol SNMP: Protocol plugin failure: Protocol SNMP error: Query failed"
+            }
+	},
+	"table_id": "ifEntry"
+    }
+}

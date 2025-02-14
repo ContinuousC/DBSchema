@@ -1,0 +1,28 @@
+{
+    "at": {
+	"path": [
+	    {"field": "snmp"}, "some",
+	    {"field": "ipMib"}, "some",
+	    {"field": "ipAddrTable"}, "some"
+	],
+	"filter": {
+	    "any_elem": {
+		"all": [
+		    {
+			"at": {
+			    "path": [{"field": "ipAdEntAddr"}],
+			    "filter": {"eq": "127.0.0.1"}
+			}
+			
+		    },
+		    {
+			"at": {
+			    "path": [{"field": "ipAdEntReasmMaxSize"}],
+			    "filter": {"eq": 16384}
+			}
+		    }
+		]
+	    }
+	}
+    }
+}

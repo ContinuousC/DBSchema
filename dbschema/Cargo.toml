@@ -1,0 +1,24 @@
+[package]
+name = "dbschema"
+version = "0.1.37"
+authors = ["Maarten Deprez", "Vincent Stuyck"]
+edition = "2021"
+repository = "https://github.com/ContinuousC/DBSchema.git"
+description = "Database schema type definitions and functions"
+license = "Elastic-2.0"
+publish = false
+
+[features]
+schemars = ["dep:schemars"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive", "rc"] }
+serde_json = { version = "1.0", features = ["raw_value"] }
+chrono = { version = "0.4.11", features = ["serde"] }
+thiserror = "1.0"
+clap = { version = "4", features = ["derive"] }
+uuid = { version = "1.4", features = ["v4", "serde"] }
+schemars = { version = "0.8.21", optional = true, features = ["chrono"] }
+serde-value = "0.7.0"
+
+dbschema-derive = { version = "0.1.6" }

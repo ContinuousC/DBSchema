@@ -1,0 +1,20 @@
+{
+    "snmp": {
+	"ipMib": {
+	    "ipAddrTable": {
+		"1": {
+		    "ipAdEntAddr": "127.0.0.1",
+		    "ipAdEntNetMask": "255.0.0.0",
+		    "ipAdEntBcastAddr": "127.255.255.255",
+		    "ipAdEntReasmMaxSize": 16384
+		},
+		"2": {
+		    "ipAdEntAddr": "192.168.0.1",
+		    "ipAdEntNetMask": "255.255.255.0",
+		    "ipAdEntBcastAddr": "192.168.0.255",
+		    "ipAdEntReasmMaxSize": 16384
+		}
+	    }
+	}
+    }
+}
