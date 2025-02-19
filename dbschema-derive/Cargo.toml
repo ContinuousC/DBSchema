@@ -1,6 +1,6 @@
 [package]
 name = "dbschema-derive"
-version = "0.1.8"
+version = "0.1.9"
 authors = ["Maarten Deprez"]
 edition = "2021"
 description = "Configuration rule derivation for ContinuousC"
