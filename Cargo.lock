@@ -184,7 +184,7 @@ dependencies = [
 
 [[package]]
 name = "dbschema-derive"
-version = "0.1.8"
+version = "0.1.9"
 dependencies = [
  "dbschema",
  "proc-macro2",
@@ -196,7 +196,7 @@ dependencies = [
 
 [[package]]
 name = "dbschema-elastic"
-version = "0.1.3"
+version = "0.1.4"
 dependencies = [
  "chrono",
  "clap",
